@@ -29,11 +29,14 @@ function Home2() {
               — and I enjoy working across both backend and frontend stacks.
               <br />
               <br />
-              Whenever possible, I love building projects with
+              While I love building projects with
               <b className="purple"> Node.js </b> and modern frameworks like{" "}
               <i>
                 <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">Next.js</b>. 
+                I also have a strong affinity for
+                <b className="purple"> Laravel </b> when when it comes to crafting robust, scalable{" "}
+                <b className="purple">PHP</b> applications.
               </i>
             </p>
           </Col>
