@@ -35,7 +35,7 @@ function Home2() {
                 <b className="purple">React.js</b> and{" "}
                 <b className="purple">Next.js</b>. 
                 I also have a strong affinity for
-                <b className="purple"> Laravel </b> when when it comes to crafting robust, scalable{" "}
+                <b className="purple"> Laravel </b> when it comes to crafting robust, scalable{" "}
                 <b className="purple">PHP</b> applications.
               </i>
             </p>
