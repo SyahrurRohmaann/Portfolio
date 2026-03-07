@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import siudin from "../../Assets/Projects/si-udin.png";
+import edusense from "../../Assets/Projects/edusense.png";
+import smartkost from "../../Assets/Projects/smartkost.png";
+import mbkm from "../../Assets/Projects/mbkm.png";
+import vieladefis from "../../Assets/Projects/vieladefis.png";
 
 function Projects() {
   return (
@@ -22,7 +22,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={smartkost}
               isBlog={false}
               title="Smartkost"
               description="A comprehensive property management system designed to streamline room tracking, tenant billing, and digital communication for boarding house operations."
@@ -32,7 +32,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={vieladefis}
               isBlog={false}
               title="VielaDefis E-commerce"
               description="A robust retail platform featuring secure payment integration and a seamless user interface for optimized online shopping and inventory management."
@@ -42,7 +42,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={edusense}
               isBlog={false}
               title="Edusense"
               description="An interactive educational monitoring tool that enables parents and teachers to track children’s learning milestones through a merit-based point system."
@@ -52,7 +52,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={siudin}
               isBlog={false}
               title="Si Udin"
               description="A mobile-based stimulation game designed to enhance toddler cognitive development through interactive animal, shape, and sound recognition."
@@ -62,7 +62,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={mbkm}
               isBlog={false}
               title="Website MBKM"
               description="A centralized administrative portal to simplify and automate the registration, selection, and document management process for campus exchange programs."
