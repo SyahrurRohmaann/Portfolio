@@ -253,6 +253,15 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  z-index: 0 !important;
+}
+
+/* Keep project cards above the particle canvas so stars don't speckle the text. */
+.project-section .project-card,
+.project-section .project-heading,
+.project-section > .container {
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 .home-header {
@@ -471,6 +480,38 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Body grows to fill the card so every card's button row sits on one baseline,
+   regardless of how long each description is. */
+.project-card-view .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+.project-card-view .card-text {
+  margin-bottom: 1rem !important;
+}
+
+/* Actions live in one flex row pinned to the card bottom, so GitHub and Demo
+   share a baseline across cards whether or not a demo link exists. */
+.project-card-actions {
+  margin-top: auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+.project-card-actions .btn {
+  flex: 1 1 0 !important;
+}
+
+/* Titles reserve two lines so a wrapping title cannot desync the row. */
+.project-card-view .card-title {
+  min-height: 2.4em !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
@@ -513,6 +554,8 @@ button:focus {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
 }
 
 .blog-img {
