@@ -13,7 +13,8 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+// Dipakai oleh nav Resume yang dinonaktifkan sementara.
+// import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -81,6 +82,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            {/* Halaman Resume dinonaktifkan sementara.
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -90,6 +92,7 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
+            */}
 
             <Nav.Item className="fork-btn">
               <Button

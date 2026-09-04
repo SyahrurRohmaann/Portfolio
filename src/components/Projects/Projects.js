@@ -5,8 +5,9 @@ import Particle from "../Particle";
 import siudin from "../../Assets/Projects/si-udin.png";
 import edusense from "../../Assets/Projects/edusense.png";
 import smartkost from "../../Assets/Projects/smartkost.png";
-import mbkm from "../../Assets/Projects/mbkm.png";
-import vieladefis from "../../Assets/Projects/vieladefis.png";
+import alagance from "../../Assets/Projects/vieladefis.png";
+// Website MBKM dihapus dari daftar project.
+// import mbkm from "../../Assets/Projects/mbkm.png";
 
 function Projects() {
   return (
@@ -22,21 +23,21 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={smartkost}
+              imgPath={alagance}
               isBlog={false}
-              title="Smartkost"
-              description="A comprehensive property management system designed to streamline room tracking, tenant billing, and digital communication for boarding house operations."
-              ghLink="https://github.com/SyahrurRohmaann/smartkost"
+              title="Alagance E-Commerce"
+              description="A decoupled luxury retail platform: React (Vite) storefront on a Laravel REST API, with Xendit payment gateway and webhook callbacks, real-time multi-currency pricing, guest order tracking, and an admin backoffice for products, orders, shipping, and sales analytics."
+              ghLink="https://github.com/SyahrurRohmaann/e-commerce_web"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={vieladefis}
+              imgPath={smartkost}
               isBlog={false}
-              title="VielaDefis E-commerce"
-              description="A robust retail platform featuring secure payment integration and a seamless user interface for optimized online shopping and inventory management."
-              ghLink="https://github.com/SyahrurRohmaann/e-commerce_web"
+              title="Smartkost"
+              description="A comprehensive property management system designed to streamline room tracking, tenant billing, and digital communication for boarding house operations."
+              ghLink="https://github.com/SyahrurRohmaann/smartkost"
             />
           </Col>
 
@@ -58,16 +59,6 @@ function Projects() {
               description="A mobile-based stimulation game designed to enhance toddler cognitive development through interactive animal, shape, and sound recognition."
               ghLink="https://github.com/SyahrurRohmaann/game"
             />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={mbkm}
-              isBlog={false}
-              title="Website MBKM"
-              description="A centralized administrative portal to simplify and automate the registration, selection, and document management process for campus exchange programs."
-              ghLink="https://github.com/SyahrurRohmaann/mbkm_tefa"
-                 />
           </Col>
         </Row>
       </Container>
